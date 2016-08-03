@@ -1,5 +1,8 @@
 ## riscv-devkit
 
+Inspired by the wonderful works of [sbates130272/docker-riscv](https://github.com/sbates130272/docker-riscv), 
+[coldnew's blog](http://coldnew.github.io), and of course [Berkley RISC-V](https://github.com/riscv).
+
 This Dockerfile can used to create a development environment 
 with open source RISC-V Tools (GNU Toolchain, ISA Simulator, Tests), RISC-V Linux, etc
 
@@ -11,3 +14,22 @@ Quote [the Docker Hub page](https://registry.hub.docker.com/_/buildpack-deps/):
 >"development header" packages needed by various things like Ruby Gems, PyPI modules, etc.
 
 ### Work in progress!
+
+Use following shell command to play with different dockerfile:
+```
+$ docker build -f dockerfile-name -t your-image-tag .
+```
+
+If there's anything wrong, use following commands to find your container IDs, and delete the container:
+
+```
+$ docker ps -a
+$ docker rm your-bad-container-id
+```
+and image IDs, and delete the image you don't like
+
+```
+$ docker images
+$ docker rmi your-bad-image-id
+```
+
