@@ -1,29 +1,17 @@
-FROM ubuntu
+FROM buildpack-deps:xenial
 
 MAINTAINER Zhengyi Xu (zhengyixu) <zhengyi123@gmail.com>
 
 RUN apt-get update && apt-get install --no-install-recommends -y \
     apt-utils \
-    autoconf \
-    automake \
-    autotools-dev \
-    bash-completion \
     bc \
     bison \
-    build-essential \
-    curl \
+    gawk \
     flex \
     gawk \
-    git \
     gperf \
-    libmpc-dev \
-    libmpfr-dev \
-    libgmp-dev \
-    libtool \
-    ncurses-dev \
     patchutils \
-    texinfo \
-    vim-nox
+    texinfo
 
 ENV RISCV /opt/riscv
 ENV NUMJOBS 1
