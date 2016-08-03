@@ -3,6 +3,7 @@ FROM buildpack-deps:xenial
 MAINTAINER Zhengyi Xu (zhengyixu) <zhengyi123@gmail.com>
 
 RUN apt-get update && apt-get install --no-install-recommends -y \
+    apt-utils \
     bc \
     bison \
     gawk \
