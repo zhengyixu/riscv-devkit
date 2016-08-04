@@ -14,7 +14,8 @@ Quote [the Docker Hub page](https://registry.hub.docker.com/_/buildpack-deps/):
 >"development header" packages needed by various things like Ruby Gems, PyPI modules, etc.
 
 ### Work in progress!
-** Due to compilation error using buildpack-deps base image, using Ubuntu:latest for now **
+
+**Due to compilation error using buildpack-deps base image, using Ubuntu:latest for now**
 
 Use following shell command to play with different dockerfile:
 ```
