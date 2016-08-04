@@ -33,3 +33,15 @@ $ docker images
 $ docker rmi your-bad-image-id
 ```
 
+### Breaked Dockerfile into smaller pieces, so when one step failed, we can just reuse previous
+### images, and rebuild just the failed one
+
+We can use a simple shell script for this.
+```
+$ ./build_riscvkit.sh 1
+```
+will build an image according to Dockerfile.1, and the tag will be zhengyixu/riscv-devkit-1.
+
+You can change the tag name to whatever is good for you in the script.
+
+If there's no argument passed to the script, Dockerfile will be invoked to create zhengyixu/riscv-devkit.
