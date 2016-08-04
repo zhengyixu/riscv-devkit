@@ -33,7 +33,7 @@ $ docker images
 $ docker rmi your-bad-image-id
 ```
 
-**Breaked Dockerfile into smaller pieces, so when one step failed, we can just reuse previous
+**Broke Dockerfile into smaller pieces, so when one step failed, we can just reuse previous
 images, and rebuild just the failed one**
 
 We can use a simple shell script for this.
