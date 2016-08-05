@@ -3,7 +3,7 @@
 Inspired by the wonderful works of [sbates130272/docker-riscv](https://github.com/sbates130272/docker-riscv), 
 [coldnew's blog](http://coldnew.github.io), and of course [Berkley RISC-V](https://github.com/riscv).
 
-This Dockerfile can used to create a development environment 
+This Dockerfile can be used to create a development environment 
 with open source RISC-V Tools (GNU Toolchain, ISA Simulator, Tests), RISC-V Linux, etc
 
 Since the base image is based on official Docker image [buildpack-deps](https://registry.hub.docker.com/_/buildpack-deps/)
